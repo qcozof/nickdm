@@ -1,0 +1,20 @@
+system:
+  is-debug: false
+  interval-exec-seconds: 3600
+
+redis:
+  db: 2
+  addr: '127.0.0.1:6379'
+  password: ''
+
+# zap logger configuration
+zap:
+  level: 'info'
+  format: 'console'
+  prefix: '[Monitor]'
+  directory: 'log'
+  link-name: 'latest_log'
+  show-line: true
+  encode-level: 'LowercaseColorLevelEncoder'
+  stacktrace-key: 'stacktrace'
+  log-in-console: true
